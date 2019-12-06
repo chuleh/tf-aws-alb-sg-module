@@ -1,4 +1,4 @@
-module.lb.locals {
+locals {
   sg_id = concat(
     aws_security_group.alb_sg.*.id,
     [""],
